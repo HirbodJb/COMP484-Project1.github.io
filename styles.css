@@ -1,7 +1,7 @@
 /* html and body properties: background color */
 html, body {
     background-color: #032b44;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; /* use Arial with backup fonts if it is unavailable */
 }
 
 /* Line below the entire header */
@@ -19,7 +19,7 @@ html, body {
     gap: 20px; /* space between navbar links */
     margin-top: 30px;
     max-width: 1400px;
-    width: calc(100% - 48px);
+    width: calc(100% - 48px); /* leave space on both sides on smaller windows */
     margin-left: auto;
     margin-right: auto;
 }
@@ -31,6 +31,7 @@ html, body {
     font-weight: 700;
 }
 
+/* logo properties: size and position inside the navbar */
 .navbar-logo {
     position: absolute; /* position the logo absolutely within the navbar */
     left: 0; /* align the logo with the centered content */
@@ -41,11 +42,12 @@ html, body {
 /* Equal outer margins center the page content. */
 main {
     max-width: 1400px;
-    width: calc(100% - 48px);
-    margin: 0 auto;
-    display: flow-root;
+    width: calc(100% - 48px); /* leave space on both sides on smaller windows */
+    margin: 0 auto; /* equal left and right margins center the content */
+    display: flow-root; /* keep the floated images inside the main content area */
 }
 
+/* first car image properties: float it to the right of the introduction */
 .flowRight {
     float: right;
     height: auto;
@@ -60,6 +62,7 @@ main {
     text-align: left;
 }
 
+/* main heading properties: large bold text aligned to the left */
 .home-heading {
     color: white;
     font-size: 48px;
@@ -69,13 +72,15 @@ main {
     padding-top: 50px;
 }
 
+/* paragraph properties: white text with spacing between the lines */
 p{
     color: white;
     font-size: 18px;
     font-weight: 400;
-    line-height: 1.6;
+    line-height: 1.6; /* line spacing is 1.6 times the font size */
 }
 
+/* second car image properties: float it to the left of the Why BMW text */
 .flowLeft {
     float: left;
     height: 315px;
@@ -84,6 +89,7 @@ p{
     padding-top: 50px;
 }
 
+/* Why BMW heading properties: font size and space above the heading */
 .whybmw{
     color: white;
     font-size: 28px;
@@ -91,43 +97,47 @@ p{
     padding-top: 90px;
 }
 
+/* let the Why BMW text reach the right edge of the main content */
 .whybmw-section {
     margin-right: 0;
 }
 
 /* Keep the three cards below the floated images and give them equal widths. */
 .explore-cards {
-    clear: both;
+    clear: both; /* start the cards below the floated images */
     display: flex;
     gap: 30px;
     padding: 60px 0;
 }
 
+/* each card takes an equal share of the row and stacks its content vertically */
 .explore-card {
-    flex: 1;
-    min-width: 0;
+    flex: 1; /* share the available row width equally */
+    min-width: 0; /* allow each card to shrink within the row */
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* place the title, image and button one below another */
 }
 
+/* titles above the three card images */
 .explore-card h2 {
     color: white;
     font-size: 24px;
     margin: 0 0 20px;
 }
 
+/* give the card images the same size and crop them to fit their boxes */
 .explore-card img {
     display: block;
     width: 100%;
     height: 260px;
-    object-fit: cover;
-    margin-top: auto;
+    object-fit: cover; /* fill the image box without stretching the picture */
+    margin-top: auto; /* keep the images aligned if a card title wraps */
 }
 
 /* These links look like buttons and navigate to each topic page. */
 .explore-button {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* put the button label and arrow at opposite ends */
     align-items: center;
     gap: 12px;
     margin-top: 14px;
@@ -140,11 +150,28 @@ p{
     text-decoration: none;
 }
 
-.explore-button:hover {
-    background-color: #3A65AC;
-}
-
+/* show an outline when a button link receives keyboard focus */
 .explore-button:focus-visible {
     outline: 2px solid white;
-    outline-offset: 4px;
+    outline-offset: 4px; /* leave a gap between the link and its focus outline */
+}
+
+/* footer properties: center the quote below the cards with a line above it */
+.site-footer {
+    margin: 0 auto; /* center the footer horizontally */
+    padding: 30px 0;
+    border-top: 2px solid white;
+    text-align: center;
+}
+
+/* make the quotation larger than the name below it */
+.site-footer .footer-quote {
+    font-size: 24px;
+    margin: 0 0 12px;
+}
+
+/* name of the person who said the quote */
+.site-footer .quote-author {
+    font-size: 16px;
+    margin: 0;
 }
