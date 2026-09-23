@@ -1,6 +1,7 @@
 /* html and body properties: background color */
 html, body {
     background-color: #032b44;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Line below the entire header */
@@ -17,37 +18,52 @@ html, body {
     align-items: center; /* center the navbar links vertically */
     gap: 20px; /* space between navbar links */
     margin-top: 30px;
+    max-width: 1400px;
+    width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
 }
 /*use navbar a for styling the links inside the navbar*/
 .navbar a {
     color: white;
     text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .navbar-logo {
     position: absolute; /* position the logo absolutely within the navbar */
-    left: 200px; /* position the logo at the left edge of the navbar */
+    left: 0; /* align the logo with the centered content */
     top: -22px; /* position the logo at the top edge of the navbar */
     object-fit: contain; /* ensure the logo fits within its container */
+}
+
+/* Equal outer margins center the page content. */
+main {
+    max-width: 1400px;
+    width: calc(100% - 48px);
+    margin: 0 auto;
+    display: flow-root;
 }
 
 .flowRight {
     float: right;
     height: auto;
-    margin: 50px 100px 20px 40px;
+    margin: 50px 0 20px 40px;
     width: 500px;
 }
 
 /* Keep the introduction aligned beside the image. */
 .home-intro {
-    margin-left: 22%;
-    margin-right: 640px; /* image width plus its horizontal margins */
+    margin-left: 0;
+    margin-right: 540px; /* image width plus the gap beside it */
     text-align: left;
 }
 
 .home-heading {
     color: white;
-    font-size: 3em;
+    font-size: 48px;
+    font-weight: 700;
     text-align: left;
     margin-top: 20px;
     padding-top: 50px;
@@ -55,5 +71,80 @@ html, body {
 
 p{
     color: white;
-    font-size: 1.2em;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.flowLeft {
+    float: left;
+    height: 315px;
+    margin: 50px 40px 20px 0;
+    width: 500px;
+    padding-top: 50px;
+}
+
+.whybmw{
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    padding-top: 90px;
+}
+
+.whybmw-section {
+    margin-right: 0;
+}
+
+/* Keep the three cards below the floated images and give them equal widths. */
+.explore-cards {
+    clear: both;
+    display: flex;
+    gap: 30px;
+    padding: 60px 0;
+}
+
+.explore-card {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.explore-card h2 {
+    color: white;
+    font-size: 24px;
+    margin: 0 0 20px;
+}
+
+.explore-card img {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    margin-top: auto;
+}
+
+/* These links look like buttons and navigate to each topic page. */
+.explore-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-top: 14px;
+    padding: 18px 20px;
+    border: 2px solid #3A65AC;
+    background-color: #223C73;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.explore-button:hover {
+    background-color: #3A65AC;
+}
+
+.explore-button:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 4px;
 }
