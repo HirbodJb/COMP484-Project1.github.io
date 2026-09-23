@@ -1,0 +1,59 @@
+/* html and body properties: background color */
+html, body {
+    background-color: #032b44;
+}
+
+/* Line below the entire header */
+.site-header {
+    border-bottom: 2px solid white;
+    padding-bottom: 27px; /* add some space below the header */
+}
+
+/* nav bar properties: aliged to the top center of page*/
+.navbar{
+    position: relative; /* establish a positioning context for the logo */
+    display: flex;
+    justify-content: center; /* center the navbar links horizontally */
+    align-items: center; /* center the navbar links vertically */
+    gap: 20px; /* space between navbar links */
+    margin-top: 30px;
+}
+/*use navbar a for styling the links inside the navbar*/
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-logo {
+    position: absolute; /* position the logo absolutely within the navbar */
+    left: 200px; /* position the logo at the left edge of the navbar */
+    top: -22px; /* position the logo at the top edge of the navbar */
+    object-fit: contain; /* ensure the logo fits within its container */
+}
+
+.flowRight {
+    float: right;
+    height: auto;
+    margin: 50px 100px 20px 40px;
+    width: 500px;
+}
+
+/* Keep the introduction aligned beside the image. */
+.home-intro {
+    margin-left: 22%;
+    margin-right: 640px; /* image width plus its horizontal margins */
+    text-align: left;
+}
+
+.home-heading {
+    color: white;
+    font-size: 3em;
+    text-align: left;
+    margin-top: 20px;
+    padding-top: 50px;
+}
+
+p{
+    color: white;
+    font-size: 1.2em;
+}
