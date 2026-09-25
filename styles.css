@@ -102,6 +102,8 @@ p{
     margin-right: 0;
 }
 
+/*============= Home Page Explore Cards ============= */
+
 /* Keep the three cards below the floated images and give them equal widths. */
 .explore-cards {
     clear: both; /* start the cards below the floated images */
@@ -156,6 +158,8 @@ p{
     outline: 2px solid white;
     outline-offset: 4px; /* leave a gap between the link and its focus outline */
 }
+
+/*============= Home Page Quote Footer ============= */
 
 /* footer properties: center the quote below the cards with a line above it */
 .site-footer {
@@ -218,7 +222,7 @@ p{
     letter-spacing: 3px;
 }
 
-/* =============Exapndable Cards ============= */
+/* ============= M Models Page Exapndable Cards ============= */
 
 /* place the three model cards in one row below the banner */
 .model-cards {
@@ -278,4 +282,12 @@ p{
     padding-left: 20px;
     font-size: 15px;
     line-height: 1.6;
+}
+
+/* ============= BMW M Stands Out Section ============= */
+.bmw-stands-out {
+    border: 2px solid #ac3a49;
+    padding: 20px;
+    margin: 40px 0;
+    background-color: #102332;
 }
