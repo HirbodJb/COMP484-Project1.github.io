@@ -126,6 +126,7 @@ p{
 }
 
 /* give the card images the same size and crop them to fit their boxes */
+/* block is an element that naturally begins on a new line and expands horizontally to fill the full width of its parent container */
 .explore-card img {
     display: block;
     width: 100%;
@@ -176,6 +177,8 @@ p{
     margin: 0;
 }
 
+/* ============= BMW M Models Page Top Banner ============= */
+
 /* banner properties: use the image as the area for positioning the text */
 .models-banner {
     position: relative; /* relative means the element is positioned relative to its normal position */
@@ -184,7 +187,7 @@ p{
 
 /* show the full banner image without stretching it */
 .models-banner img {
-    display: block;
+    display: block; 
     width: 100%;
     height: auto;
 }
@@ -214,6 +217,8 @@ p{
     font-size: 12px;
     letter-spacing: 3px;
 }
+
+/* =============Exapndable Cards ============= */
 
 /* place the three model cards in one row below the banner */
 .model-cards {
