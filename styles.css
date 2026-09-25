@@ -286,8 +286,17 @@ p{
 
 /* ============= BMW M Stands Out Section ============= */
 .bmw-stands-out {
-    border: 2px solid #ac3a49;
+    border: 1px solid #ac3a49;
     padding: 20px;
     margin: 40px 0;
     background-color: #102332;
 }
+
+
+/*============== Design Comparison Section ============= */
+.design-comparison {
+    border: 1px solid #3A65AC;
+    padding: 170px;
+    margin: 60px 0;
+}
+
