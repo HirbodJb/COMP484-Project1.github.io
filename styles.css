@@ -84,9 +84,9 @@ p{
 .flowLeft {
     float: left;
     height: 315px;
-    margin: 50px 40px 20px 0;
+    margin: 100px 40px 20px 0; /* keep the space outside the image so all corners can round */
     width: 500px;
-    padding-top: 50px;
+    padding-top: 0;
 }
 
 /* Why BMW heading properties: font size and space above the heading */
