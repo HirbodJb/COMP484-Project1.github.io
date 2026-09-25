@@ -19,6 +19,71 @@
         </nav>
     </header>
 
-    
+
+    <main>
+        <!--banner image below the navbar with the introduction on the left-->
+        <section class="models-banner">
+            <img src="images/bmw_banner.png" alt="Blue BMW M car parked beneath a concrete structure">
+            <div class="models-banner-text">
+                <p class="models-tagline">THE ULTIMATE DRIVING MACHINES</p>
+                <h1 id="models-title">BMW M Models</h1>
+                <p>This page highlights selected BMW M cars and briefly explores their performance and character. From compact and agile to powerful and refined, each M model brings a unique driving experience while staying true to BMW's motorsport heritage.</p>
+            </div>
+        </section>
+        
+        <!--three model cards next to each other below the banner-->
+        <div class="model-cards">
+            <article class="model-card">
+                <img src="images/2023-bmw-m2.jpg" alt="2023 BMW M2">
+                <div class="model-card-content">
+                    <h2>BMW M2</h2>
+                    <p>A compact sports coupe with bold styling and a driver-focused character. The M2 brings the M experience to a smaller two-door package.</p>
+                    <!--MDN element: details creates an expandable information area in each model card-->
+                    <!--MDN attribute: open makes the M2 details visible when the page first loads; it can still be closed-->
+                    <details open>
+                        <!--summary is the label clicked to expand or collapse the details-->
+                        <summary>View Details</summary>
+                        <ul>
+                            <li><strong>Body style:</strong> Two-door coupe</li>
+                            <li><strong>Design:</strong> Compact proportions and a wide stance</li>
+                            <li><strong>Character:</strong> Sporty and driver-focused</li>
+                        </ul>
+                    </details>
+                </div>
+            </article>
+            <article class="model-card">
+                <img src="images/bmw-m5-comp.avif" alt="BMW M5 Competition">
+                <div class="model-card-content">
+                    <h2>BMW M5 Competition</h2>
+                    <p>A performance sedan that combines a spacious four-door layout with a sporty character. The M5 Competition brings luxury and performance together.</p>
+                    <!--without the open attribute, these details start collapsed-->
+                    <details>
+                        <summary>View Details</summary>
+                        <ul>
+                            <li><strong>Body style:</strong> Four-door sedan</li>
+                            <li><strong>Design:</strong> Executive styling with sporty details</li>
+                            <li><strong>Character:</strong> Refined and performance-focused</li>
+                        </ul>
+                    </details>
+                </div>
+            </article>
+            <article class="model-card">
+                <img src="images/bmw-x6m.jpg" alt="BMW X6 M">
+                <div class="model-card-content">
+                    <h2>BMW X6 M</h2>
+                    <p>A sporty SUV with a sloping roofline and a bold presence. The X6 M combines a higher driving position with the character of the M range.</p>
+                    <!--expandable details for the X6 M, also closed when the page loads-->
+                    <details>
+                        <summary>View Details</summary>
+                        <ul>
+                            <li><strong>Body style:</strong> Coupe-style SUV</li>
+                            <li><strong>Design:</strong> Sloping roofline and a wide stance</li>
+                            <li><strong>Character:</strong> Bold and sporty</li>
+                        </ul>
+                    </details>
+                </div>
+            </article>
+        </div>
+    </main>
 </body>
 </html>

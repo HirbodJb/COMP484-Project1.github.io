@@ -175,3 +175,102 @@ p{
     font-size: 16px;
     margin: 0;
 }
+
+/* banner properties: use the image as the area for positioning the text */
+.models-banner {
+    position: relative; /* relative means the element is positioned relative to its normal position */
+    margin-top: 30px;
+}
+
+/* show the full banner image without stretching it */
+.models-banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* place the text over the empty left side of the image */
+.models-banner-text {
+    position: absolute;
+    left: 4%;
+    top: 50%;
+    transform: translateY(-50%); /* center the text vertically on the image */
+    width: 42%;
+    color: white;
+}
+
+/* main banner heading uses the same font and size as the home page */
+.models-banner-text h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.models-banner-text p {
+    margin: 0; /* 0 means no margin around the paragraph */
+}
+
+/* small line of text above the banner heading */
+.models-banner-text .models-tagline {
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+/* place the three model cards in one row below the banner */
+.model-cards {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    margin: 40px 0;
+}
+
+/* each model card has an equal width and a simple dark background */
+.model-card {
+    flex: 1;
+    min-width: 0;
+    background-color: #102332;
+    border: 1px solid #3A65AC;
+    color: white;
+}
+
+/* give all three images the same size without stretching them */
+.model-card img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* space around the title, description and expandable details */
+.model-card-content {
+    padding: 18px;
+}
+
+.model-card h2 {
+    font-size: 24px;
+    margin: 0 0 12px;
+}
+
+.model-card p {
+    font-size: 16px;
+    margin: 0 0 18px;
+}
+
+/* simple border around the native expandable details area */
+.model-card details {
+    border: 1px solid #3A65AC;
+    padding: 10px;
+}
+
+/* keep the browser's triangle and make the clickable label bold */
+.model-card summary {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+/* spacing for the information shown when the details are open */
+.model-card ul {
+    margin: 12px 0 0;
+    padding-left: 20px;
+    font-size: 15px;
+    line-height: 1.6;
+}
