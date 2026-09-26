@@ -352,3 +352,29 @@ p{
     margin-top: 30px;
     margin-right: 260px;   
 }
+
+/*three boxes one for each dream car*/
+.first-dream-car, .second-dream-car, .third-dream-car {
+    border: 1px solid #3A65AC;
+    padding: 30px;
+    min-height: 180px;
+    margin: 30px 260px;
+}
+
+.first-dream-car {
+    border-color: #3A65AC;
+}
+
+.second-dream-car {
+    border-color: white;
+}
+
+.third-dream-car {
+    border-color: #C63B2A;
+}
+
+.first-dream-car img, .second-dream-car img, .third-dream-car img {
+    align-self: auto;
+    width: 20%;
+    object-fit: cover; /*so the images do not stretch*/
+}
