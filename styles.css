@@ -303,6 +303,8 @@ p{
     gap: 40px;
     align-items: flex-start;
     color: white;
+    border-radius: 10px;
+    background-color: #102332;
 }
 
 /* give the two columns equal space with their text under the images */
