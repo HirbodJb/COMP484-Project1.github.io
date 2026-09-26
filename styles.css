@@ -16,7 +16,7 @@ html, body {
     display: flex;
     justify-content: center; /* center the navbar links horizontally */
     align-items: center; /* center the navbar links vertically */
-    gap: 20px; /* space between navbar links */
+    gap: 40px; /* space between navbar links */
     margin-top: 30px;
     max-width: 1400px;
     width: calc(100% - 48px); /* leave space on both sides on smaller windows */
@@ -293,7 +293,7 @@ p{
 }
 
 
-/*============== Design Comparison Section ============= */
+/*============== Desing & Evolution Page, Design Comparison Section ============= */
 .design-comparison {
     clear: both; /* keep the comparison below the introduction image */
     border: 1px solid #3A65AC;
@@ -345,3 +345,10 @@ p{
     margin-top: 6px;
 }
 
+
+/* ============= Dream Garage Section ============= */
+.dream-garage-intro {
+    margin-left: 260px;
+    margin-top: 30px;
+    margin-right: 260px;   
+}
