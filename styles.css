@@ -355,12 +355,14 @@ p{
 
 /*three boxes one for each dream car*/
 .first-dream-car, .second-dream-car, .third-dream-car {
-    border: 1px solid #3A65AC;
+    border: 2px solid #3A65AC;
     padding: 20px;
     margin: 30px 260px;
     display: flex; /* place the image and text next to each other */
     align-items: flex-start;
     gap: 28px;
+    background-color: #102332;
+    border-radius: 10px;
 }
 
 .first-dream-car {
