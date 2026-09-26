@@ -295,8 +295,53 @@ p{
 
 /*============== Design Comparison Section ============= */
 .design-comparison {
+    clear: both; /* keep the comparison below the introduction image */
     border: 1px solid #3A65AC;
-    padding: 170px;
+    padding: 30px; /*how big the box is*/
     margin: 60px 0;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    color: white;
+}
+
+/* give the two columns equal space with their text under the images */
+.e30-gen, .g80-gen {
+    /* flex is used to make the columns take up equal space within the design comparison section */
+    /* 1 means each column will take up an equal share of the available space*/
+    flex: 1;
+    min-width: 0;
+}
+
+/* keep both images the same size without stretching them */
+.design-comparison img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /*so the images do not stretch*/
+}
+
+.design-comparison h2 {
+    font-size: 24px;
+    margin: 18px 0 10px;
+}
+
+.design-comparison p {
+    font-size: 16px;
+    margin: 0 0 18px;
+}
+
+/* show the rating text above each meter */
+.design-comparison .design-rating {
+    font-size: 16px;
+    margin: 0; /* zero means no extra space around the rating text */
+}
+
+/* use the browser's simple meter appearance */
+.design-comparison meter {
+    display: block;
+    width: 100%;
+    height: 24px;
+    margin-top: 6px;
 }
 

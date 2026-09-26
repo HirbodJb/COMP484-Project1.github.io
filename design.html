@@ -31,14 +31,33 @@
             </div>
         </article>
 
+        <!--compare the older and newer M3 with text and a design rating below each image-->
         <div class="design-comparison">
             <div class="e30-gen">
-                <img src="images/bmw-m3-e30.jpg" alt="BMW E30" width="400" height="300" style="border-radius: 10px;">
+                <img src="images/bmw-m3-e30.jpg" alt="BMW E30 M3" width="400" height="300" style="border-radius: 10px;">
+                <h2>E30 M3</h2>
+                <p>The E30 M3 has an angular shape, round headlights, and a small kidney grille. Its simple lines give it a classic appearance, while the wider fenders add a sporty look.</p>
+                <!--MDN element: meter displays a rating within a known range here below the E30 image-->
+                <!--MDN attribute: max sets the highest possible rating to 10; value is the selected score-->
+                <!-- <label> could also be used here for the text above it-->
+                <p class="design-rating">My Design Rating: 8/10</p>
+                <meter id="e30-rating" min="0" max="10" value="8">8 out of 10</meter>
             </div>
             <div class="g80-gen">
-
+                <img src="images/bmw_m3_g80.jpg" alt="BMW G80 M3" width="400" height="300" style="border-radius: 10px;">
+                <h2>G80 M3</h2>
+                <p>The G80 M3 has a bolder appearance with a tall kidney grille, sharp headlights, and sculpted body lines. Its wide stance gives it a more aggressive look than the older M3.</p>
+                <!--second meter uses the same maximum of 10 to make the two ratings easy to compare-->
+                <p class="design-rating">My Design Rating: 9/10</p>
+                <meter id="g80-rating" min="0" max="10" value="9">9 out of 10</meter>
             </div>
         </div>
+        <article role="article">
+            <p style="font-size: small; margin-bottom: 5px; margin-top: 10px;">---- WHAT CHANGED</p>
+            <h2 style="padding-top: 0; margin-top: 0; color: white; font-size: 28px;"> From Subtle to Aggressive</h2>
+            <p> One of the biggest changes in BMW design is the front end. Older models typically used smaller kidney grilles, softer body lines, and simpler headlights. Newer models have introduced much larger grilles, sharper lighting, and more detailed and aggressive bumpers. BMW has also moved toward wider and more muscular proportions, especially on its M cars. </p>
+            <p>Even with these changes, some traditional BMW details remain. The kidney grille is still one of the most recognizable elements of the brand, and M models continue to use wider fenders, large wheels, and unique aerodynamic details to stand out from standard models.</p>
+        </article>
     </main>
 </body>
 </html>
