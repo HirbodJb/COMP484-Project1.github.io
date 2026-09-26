@@ -356,9 +356,11 @@ p{
 /*three boxes one for each dream car*/
 .first-dream-car, .second-dream-car, .third-dream-car {
     border: 1px solid #3A65AC;
-    padding: 30px;
-    min-height: 180px;
+    padding: 20px;
     margin: 30px 260px;
+    display: flex; /* place the image and text next to each other */
+    align-items: flex-start;
+    gap: 28px;
 }
 
 .first-dream-car {
@@ -373,8 +375,27 @@ p{
     border-color: #C63B2A;
 }
 
+/* use a wider image and its natural height so the whole photo stays visible */
 .first-dream-car img, .second-dream-car img, .third-dream-car img {
-    align-self: auto;
-    width: 20%;
-    object-fit: cover; /*so the images do not stretch*/
+    display: block;
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* the text fills the remaining space beside the photo */
+.dream-car-text {
+    flex: 1;
+    min-width: 0;
+    color: white;
+}
+
+.dream-car-text h2 {
+    font-size: 28px;
+    margin: 0 0 12px;
+}
+
+.dream-car-text p {
+    font-size: 16px;
+    margin: 0;
 }
