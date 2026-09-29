@@ -1,7 +1,7 @@
 /* html and body properties: background color */
 html, body {
     background-color: #032b44;
-    font-family: Arial, Helvetica, sans-serif; /* use Arial with backup fonts if it is unavailable */
+    font-family: Arial, Helvetica, sans-serif; 
 }
 
 /* Line below the entire header */
@@ -13,7 +13,7 @@ html, body {
 /* nav bar properties: aliged to the top center of page*/
 .navbar{
     position: relative; /* establish a positioning context for the logo */
-    display: flex;
+    display: flex; 
     justify-content: center; /* center the navbar links horizontally */
     align-items: center; /* center the navbar links vertically */
     gap: 40px; /* space between navbar links */
@@ -151,12 +151,6 @@ p{
     font-size: 16px;
     font-weight: 700;
     text-decoration: none;
-}
-
-/* show an outline when a button link receives keyboard focus */
-.explore-button:focus-visible {
-    outline: 2px solid white;
-    outline-offset: 4px; /* leave a gap between the link and its focus outline */
 }
 
 /*============= Home Page Quote Footer ============= */
